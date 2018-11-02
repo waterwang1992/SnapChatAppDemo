@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ZYDLOpenSnap : NSObject
-- (instancetype)initWithViewController:(id)viewcontroller;
+
+@property (assign, nonatomic, readonly) BOOL isSuccessLoad;
+
++ (instancetype)shareSnap;
+
+- (BOOL)startLoad;
+
 @end

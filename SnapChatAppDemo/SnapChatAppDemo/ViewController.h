@@ -10,6 +10,5 @@
 
 @interface ViewController : UIViewController
 
-@property (class, assign) BOOL testBool;
 @end
 

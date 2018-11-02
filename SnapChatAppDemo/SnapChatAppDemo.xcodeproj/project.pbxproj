@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		112BF8E9213D0A7A001626AE /* ZYPerformSeletorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BF8E8213D0A7A001626AE /* ZYPerformSeletorHelper.m */; };
 		11308DA22125052E0051F412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308DA12125052E0051F412 /* AppDelegate.m */; };
 		11308DA52125052E0051F412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308DA42125052E0051F412 /* ViewController.m */; };
 		11308DA82125052E0051F412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11308DA62125052E0051F412 /* Main.storyboard */; };
@@ -16,10 +15,13 @@
 		11308DB0212505300051F412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308DAF212505300051F412 /* main.m */; };
 		11308DBA212505300051F412 /* SnapChatAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308DB9212505300051F412 /* SnapChatAppDemoTests.m */; };
 		11308DC5212505300051F412 /* SnapChatAppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11308DC4212505300051F412 /* SnapChatAppDemoUITests.m */; };
-		114DEAD621254C6000735E0B /* ZYDLOpenSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = 114DEAD521254C6000735E0B /* ZYDLOpenSnap.m */; };
-		863257C4745F53DB31CF9A6E /* Pods_SnapChatAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A56CA413EF85F7AF6B8E61 /* Pods_SnapChatAppDemo.framework */; };
-		A8B3EA87B38BECD619568346 /* Pods_SnapChatAppDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C0F88D4DA20C5BCCAFF55 /* Pods_SnapChatAppDemoTests.framework */; };
-		B8C138370D1AC069780E91E2 /* Pods_SnapChatAppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1F6C5E45A7E5D1C5826AE /* Pods_SnapChatAppDemoUITests.framework */; };
+		116BE475218BFD74006836C0 /* ZYSCLoginButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE46E218BFD74006836C0 /* ZYSCLoginButtonFactory.m */; };
+		116BE476218BFD74006836C0 /* ZYPerformSeletorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE46F218BFD74006836C0 /* ZYPerformSeletorHelper.m */; };
+		116BE477218BFD74006836C0 /* ZYSCLoginClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE470218BFD74006836C0 /* ZYSCLoginClient.m */; };
+		116BE478218BFD74006836C0 /* ZYDLOpenSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE473218BFD74006836C0 /* ZYDLOpenSnap.m */; };
+		3CDDAE4DE57129569495BA9F /* libPods-SnapChatAppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B9A05AFB5E344CCB91E450 /* libPods-SnapChatAppDemoTests.a */; };
+		AAC9C6F31CD7355D60B46D08 /* libPods-SnapChatAppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B292DC6FF27288965D0B752 /* libPods-SnapChatAppDemo.a */; };
+		BFF5C8AEF923FA4EBAA5CF6A /* libPods-SnapChatAppDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55D9DB9DAA9D507D80978ED /* libPods-SnapChatAppDemoUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		112BF8E7213D0A7A001626AE /* ZYPerformSeletorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPerformSeletorHelper.h; sourceTree = "<group>"; };
-		112BF8E8213D0A7A001626AE /* ZYPerformSeletorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPerformSeletorHelper.m; sourceTree = "<group>"; };
 		11308D9D2125052E0051F412 /* SnapChatAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChatAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11308DA02125052E0051F412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11308DA12125052E0051F412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,16 +71,23 @@
 		11308DC0212505300051F412 /* SnapChatAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChatAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11308DC4212505300051F412 /* SnapChatAppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapChatAppDemoUITests.m; sourceTree = "<group>"; };
 		11308DC6212505300051F412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		114DEAD421254C6000735E0B /* ZYDLOpenSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDLOpenSnap.h; sourceTree = "<group>"; };
-		114DEAD521254C6000735E0B /* ZYDLOpenSnap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDLOpenSnap.m; sourceTree = "<group>"; };
-		3DB1F6C5E45A7E5D1C5826AE /* Pods_SnapChatAppDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChatAppDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		116BE46C218BFD74006836C0 /* ZYSCLoginClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSCLoginClient.h; sourceTree = "<group>"; };
+		116BE46D218BFD74006836C0 /* ZYDLOpenSnap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDLOpenSnap.h; sourceTree = "<group>"; };
+		116BE46E218BFD74006836C0 /* ZYSCLoginButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSCLoginButtonFactory.m; sourceTree = "<group>"; };
+		116BE46F218BFD74006836C0 /* ZYPerformSeletorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPerformSeletorHelper.m; sourceTree = "<group>"; };
+		116BE470218BFD74006836C0 /* ZYSCLoginClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSCLoginClient.m; sourceTree = "<group>"; };
+		116BE471218BFD74006836C0 /* ZYSCLoginButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSCLoginButtonFactory.h; sourceTree = "<group>"; };
+		116BE472218BFD74006836C0 /* ZYSCLoginKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSCLoginKit.h; sourceTree = "<group>"; };
+		116BE473218BFD74006836C0 /* ZYDLOpenSnap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDLOpenSnap.m; sourceTree = "<group>"; };
+		116BE474218BFD74006836C0 /* ZYPerformSeletorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPerformSeletorHelper.h; sourceTree = "<group>"; };
 		45D01ADB0AD24D7A1FBFAFA6 /* Pods-SnapChatAppDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoUITests/Pods-SnapChatAppDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		53DD3F11C23B7003172FFF9B /* Pods-SnapChatAppDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		57797770656F2F9ABF0E6E7D /* Pods-SnapChatAppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F486233FF82029C25565DAD /* Pods-SnapChatAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		94A56CA413EF85F7AF6B8E61 /* Pods_SnapChatAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChatAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B9C0F88D4DA20C5BCCAFF55 /* Pods_SnapChatAppDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChatAppDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B292DC6FF27288965D0B752 /* libPods-SnapChatAppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnapChatAppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B9A05AFB5E344CCB91E450 /* libPods-SnapChatAppDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnapChatAppDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E6FDF76CA4CFA4C0F031CE /* Pods-SnapChatAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C55D9DB9DAA9D507D80978ED /* libPods-SnapChatAppDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnapChatAppDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDFD6BD4BBC84F573C84D9F /* Pods-SnapChatAppDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoUITests/Pods-SnapChatAppDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863257C4745F53DB31CF9A6E /* Pods_SnapChatAppDemo.framework in Frameworks */,
+				AAC9C6F31CD7355D60B46D08 /* libPods-SnapChatAppDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8B3EA87B38BECD619568346 /* Pods_SnapChatAppDemoTests.framework in Frameworks */,
+				3CDDAE4DE57129569495BA9F /* libPods-SnapChatAppDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C138370D1AC069780E91E2 /* Pods_SnapChatAppDemoUITests.framework in Frameworks */,
+				BFF5C8AEF923FA4EBAA5CF6A /* libPods-SnapChatAppDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +144,7 @@
 		11308D9F2125052E0051F412 /* SnapChatAppDemo */ = {
 			isa = PBXGroup;
 			children = (
-				114DEAD721254D5100735E0B /* SnapSDK */,
-				114DEAD421254C6000735E0B /* ZYDLOpenSnap.h */,
-				114DEAD521254C6000735E0B /* ZYDLOpenSnap.m */,
+				116BE46A218BFD74006836C0 /* SnapSDK */,
 				11308DA02125052E0051F412 /* AppDelegate.h */,
 				11308DA12125052E0051F412 /* AppDelegate.m */,
 				11308DA32125052E0051F412 /* ViewController.h */,
@@ -171,13 +176,28 @@
 			path = SnapChatAppDemoUITests;
 			sourceTree = "<group>";
 		};
-		114DEAD721254D5100735E0B /* SnapSDK */ = {
+		116BE46A218BFD74006836C0 /* SnapSDK */ = {
 			isa = PBXGroup;
 			children = (
-				112BF8E7213D0A7A001626AE /* ZYPerformSeletorHelper.h */,
-				112BF8E8213D0A7A001626AE /* ZYPerformSeletorHelper.m */,
+				116BE46B218BFD74006836C0 /* ZYSnapLogin */,
 			);
 			path = SnapSDK;
+			sourceTree = "<group>";
+		};
+		116BE46B218BFD74006836C0 /* ZYSnapLogin */ = {
+			isa = PBXGroup;
+			children = (
+				116BE46D218BFD74006836C0 /* ZYDLOpenSnap.h */,
+				116BE473218BFD74006836C0 /* ZYDLOpenSnap.m */,
+				116BE474218BFD74006836C0 /* ZYPerformSeletorHelper.h */,
+				116BE46F218BFD74006836C0 /* ZYPerformSeletorHelper.m */,
+				116BE471218BFD74006836C0 /* ZYSCLoginButtonFactory.h */,
+				116BE46E218BFD74006836C0 /* ZYSCLoginButtonFactory.m */,
+				116BE46C218BFD74006836C0 /* ZYSCLoginClient.h */,
+				116BE470218BFD74006836C0 /* ZYSCLoginClient.m */,
+				116BE472218BFD74006836C0 /* ZYSCLoginKit.h */,
+			);
+			path = ZYSnapLogin;
 			sourceTree = "<group>";
 		};
 		C475227F88EBC384CECB16CB /* Pods */ = {
@@ -196,9 +216,9 @@
 		FA738CC0D82D85780A6FD088 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94A56CA413EF85F7AF6B8E61 /* Pods_SnapChatAppDemo.framework */,
-				9B9C0F88D4DA20C5BCCAFF55 /* Pods_SnapChatAppDemoTests.framework */,
-				3DB1F6C5E45A7E5D1C5826AE /* Pods_SnapChatAppDemoUITests.framework */,
+				6B292DC6FF27288965D0B752 /* libPods-SnapChatAppDemo.a */,
+				90B9A05AFB5E344CCB91E450 /* libPods-SnapChatAppDemoTests.a */,
+				C55D9DB9DAA9D507D80978ED /* libPods-SnapChatAppDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,10 +234,9 @@
 				11308D992125052E0051F412 /* Sources */,
 				11308D9A2125052E0051F412 /* Frameworks */,
 				11308D9B2125052E0051F412 /* Resources */,
-				82CE310BA8B97D929A1FDF90 /* [CP] Embed Pods Frameworks */,
-				01897EF643F3AD7640A1CAA0 /* [CP] Copy Pods Resources */,
 				11308DD821250F250051F412 /* Embed Frameworks */,
 				11E162E5213E6C0200FCBED2 /* ShellScript */,
+				CE4AD98407B3ACC3A45E9531 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,8 +255,6 @@
 				11308DB1212505300051F412 /* Sources */,
 				11308DB2212505300051F412 /* Frameworks */,
 				11308DB3212505300051F412 /* Resources */,
-				4448F54E30A9BE273C79AEFF /* [CP] Embed Pods Frameworks */,
-				E799DAF041423CD0BDF978C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,8 +274,6 @@
 				11308DBC212505300051F412 /* Sources */,
 				11308DBD212505300051F412 /* Frameworks */,
 				11308DBE212505300051F412 /* Resources */,
-				88EE66F7B8B03F673CB328FF /* [CP] Embed Pods Frameworks */,
-				78EA243F8D324003D568EB26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,21 +355,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01897EF643F3AD7640A1CAA0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		11E162E5213E6C0200FCBED2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,69 +386,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4448F54E30A9BE273C79AEFF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		78EA243F8D324003D568EB26 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemoUITests/Pods-SnapChatAppDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82CE310BA8B97D929A1FDF90 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88EE66F7B8B03F673CB328FF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemoUITests/Pods-SnapChatAppDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8EDF5B08B47243E847628F36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,19 +404,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E799DAF041423CD0BDF978C0 /* [CP] Copy Pods Resources */ = {
+		CE4AD98407B3ACC3A45E9531 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapChatAppDemo/Pods-SnapChatAppDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1EF91CE375C2455BB92AF3C /* [CP] Check Pods Manifest.lock */ = {
@@ -507,11 +447,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114DEAD621254C6000735E0B /* ZYDLOpenSnap.m in Sources */,
-				112BF8E9213D0A7A001626AE /* ZYPerformSeletorHelper.m in Sources */,
 				11308DA52125052E0051F412 /* ViewController.m in Sources */,
+				116BE476218BFD74006836C0 /* ZYPerformSeletorHelper.m in Sources */,
+				116BE478218BFD74006836C0 /* ZYDLOpenSnap.m in Sources */,
+				116BE475218BFD74006836C0 /* ZYSCLoginButtonFactory.m in Sources */,
 				11308DB0212505300051F412 /* main.m in Sources */,
 				11308DA22125052E0051F412 /* AppDelegate.m in Sources */,
+				116BE477218BFD74006836C0 /* ZYSCLoginClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +641,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanpDemo.clarence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -732,7 +674,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanpDemo.clarence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
