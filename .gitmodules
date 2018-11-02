@@ -1,0 +1,3 @@
+[submodule "SnapChatAppDemo/SnapFramework"]
+	path = SnapChatAppDemo/SnapFramework
+	url = https://github.com/waterwang1992/ZYSnapSDK.git

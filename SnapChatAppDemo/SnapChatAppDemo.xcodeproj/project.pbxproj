@@ -19,6 +19,9 @@
 		116BE476218BFD74006836C0 /* ZYPerformSeletorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE46F218BFD74006836C0 /* ZYPerformSeletorHelper.m */; };
 		116BE477218BFD74006836C0 /* ZYSCLoginClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE470218BFD74006836C0 /* ZYSCLoginClient.m */; };
 		116BE478218BFD74006836C0 /* ZYDLOpenSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = 116BE473218BFD74006836C0 /* ZYDLOpenSnap.m */; };
+		116BE482218C1F4E006836C0 /* Protobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 116BE47B218C1F32006836C0 /* Protobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		116BE484218C1F4E006836C0 /* SCSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 116BE47C218C1F32006836C0 /* SCSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		116BE486218C1F4E006836C0 /* SCSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 116BE47D218C1F32006836C0 /* SCSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CDDAE4DE57129569495BA9F /* libPods-SnapChatAppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B9A05AFB5E344CCB91E450 /* libPods-SnapChatAppDemoTests.a */; };
 		AAC9C6F31CD7355D60B46D08 /* libPods-SnapChatAppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B292DC6FF27288965D0B752 /* libPods-SnapChatAppDemo.a */; };
 		BFF5C8AEF923FA4EBAA5CF6A /* libPods-SnapChatAppDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55D9DB9DAA9D507D80978ED /* libPods-SnapChatAppDemoUITests.a */; };
@@ -48,6 +51,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				116BE484218C1F4E006836C0 /* SCSDKLoginKit.framework in Embed Frameworks */,
+				116BE482218C1F4E006836C0 /* Protobuf.framework in Embed Frameworks */,
+				116BE486218C1F4E006836C0 /* SCSDKCoreKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +86,9 @@
 		116BE472218BFD74006836C0 /* ZYSCLoginKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSCLoginKit.h; sourceTree = "<group>"; };
 		116BE473218BFD74006836C0 /* ZYDLOpenSnap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDLOpenSnap.m; sourceTree = "<group>"; };
 		116BE474218BFD74006836C0 /* ZYPerformSeletorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPerformSeletorHelper.h; sourceTree = "<group>"; };
+		116BE47B218C1F32006836C0 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
+		116BE47C218C1F32006836C0 /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		116BE47D218C1F32006836C0 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
 		45D01ADB0AD24D7A1FBFAFA6 /* Pods-SnapChatAppDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoUITests/Pods-SnapChatAppDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		53DD3F11C23B7003172FFF9B /* Pods-SnapChatAppDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		57797770656F2F9ABF0E6E7D /* Pods-SnapChatAppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatAppDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChatAppDemoTests/Pods-SnapChatAppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +153,7 @@
 		11308D9F2125052E0051F412 /* SnapChatAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				116BE479218C1F32006836C0 /* SnapFramework */,
 				116BE46A218BFD74006836C0 /* SnapSDK */,
 				11308DA02125052E0051F412 /* AppDelegate.h */,
 				11308DA12125052E0051F412 /* AppDelegate.m */,
@@ -198,6 +208,24 @@
 				116BE472218BFD74006836C0 /* ZYSCLoginKit.h */,
 			);
 			path = ZYSnapLogin;
+			sourceTree = "<group>";
+		};
+		116BE479218C1F32006836C0 /* SnapFramework */ = {
+			isa = PBXGroup;
+			children = (
+				116BE47A218C1F32006836C0 /* Framework */,
+			);
+			path = SnapFramework;
+			sourceTree = SOURCE_ROOT;
+		};
+		116BE47A218C1F32006836C0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				116BE47B218C1F32006836C0 /* Protobuf.framework */,
+				116BE47C218C1F32006836C0 /* SCSDKLoginKit.framework */,
+				116BE47D218C1F32006836C0 /* SCSDKCoreKit.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		C475227F88EBC384CECB16CB /* Pods */ = {
@@ -634,6 +662,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SnapChatAppDemo/SnapSDK",
 					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)/SnapFramework/Framework",
 				);
 				INFOPLIST_FILE = SnapChatAppDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -667,6 +696,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SnapChatAppDemo/SnapSDK",
 					"$(PROJECT_DIR)/Pods/SnapSDK",
+					"$(PROJECT_DIR)/SnapFramework/Framework",
 				);
 				INFOPLIST_FILE = SnapChatAppDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
